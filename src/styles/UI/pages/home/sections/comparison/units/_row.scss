@@ -1,0 +1,74 @@
+@use "./../../../../../../common/variable" as v;
+
+div.row {
+  display: flex;
+  justify-content: flex-end;
+  height: 66px;
+  @media (max-width: 767.98px) {
+    height: 90px;
+  }
+  &:nth-child(odd) {
+    background-color: v.$row_bg;
+  }
+  div.row-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: v.$row_header;
+    width: 200px;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    white-space: pre;
+    word-wrap: break-word;
+    @media (max-width: 767.98px) {
+      font-size: 13px;
+      width: 200px;
+      white-space: normal;
+      word-wrap: normal;
+      padding: 1px 10px;
+    }
+  }
+
+  div.row-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    height: 100%;
+    text-align: center;
+    @media (max-width: 767.98px) {
+      padding: 6px 6px;
+    }
+    p.cell-paragraph {
+      span.num-span {
+        font-size: 12px;
+      }
+    }
+  }
+  div.row-cell.row-first,
+  div.row-cell.row-sec {
+  }
+  div.row-cell.row-first {
+    width: v.$width_first;
+    @media (max-width: 767.98px) {
+      width: 187px;
+      font-size: 13px;
+    }
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+      width: v.$width_first_medium;
+    }
+  }
+
+  div.row-cell.row-sec {
+    width: v.$width_sec;
+    background-color: v.$sec_column_overlay;
+    @media (max-width: 767.98px) {
+      width: 214px;
+      font-size: 13px;
+    }
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+      width: v.$width_sec_medium;
+    }
+  }
+}

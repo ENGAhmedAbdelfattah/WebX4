@@ -1,0 +1,181 @@
+@use "./../../../../../common/variable" as v;
+
+section.comparison {
+  div.container:nth-child(1) {
+    margin-top: 77px;
+    div.comparison-top {
+      text-align: center;
+      h2.comparison-header {
+        a {
+          text-decoration: none;
+          color: v.$comparison_header;
+          font-size: 37px;
+          font-weight: 800;
+          margin-bottom: 4px;
+          @media (max-width: 767.98px) {
+            font-size: 35px;
+          }
+        }
+      }
+
+      p.comparison-paragraph {
+        color: v.$comparison_paragraph;
+        font-size: v.$subtitle;
+        font-weight: 700;
+        @media (max-width: 767.98px) {
+          font-size: 21px;
+        }
+      }
+    }
+
+    div.comparison-bottom {
+      width: 1014px;
+      margin: auto;
+      margin-top: 40px;
+      @media (max-width: 767.98px) {
+        width: 333px;
+      }
+      @media (min-width: 767.98px) and (max-width: 991.98px) {
+        width: 740px;
+      }
+      div.table-headers {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: center;
+        // div.t-head {
+        // }
+        div.t-head.first-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: v.$first_header_color;
+          background-color: v.$first_header_bg;
+          width: calc(v.$width_first + 20px);
+          height: 55px;
+          padding: v.$padding_row;
+          border-top-left-radius: 15px;
+          position: relative;
+          z-index: -1;
+          font-size: 17px;
+          @media (max-width: 767.98px) {
+            width: calc(v.$width_first_small + 20px);
+            height: 62px;
+            font-size: 15px;
+            line-height: 1.2;
+          }
+          @media (min-width: 767.98px) and (max-width: 991.98px) {
+            width: calc(v.$width_first_medium + 20px);
+          }
+          @at-root html[dir="rtl"]
+              section.comparison
+              div.container
+              div.comparison-bottom
+              div.table-headers
+              div.t-head.first-header {
+            border-top-left-radius: 0;
+            border-top-right-radius: 15px;
+          }
+        }
+
+        div.t-head.sec-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: v.$white_color;
+          background-color: v.$sec_header_bg;
+          width: calc(v.$width_sec - 40px);
+          margin-right: 20px;
+          padding: v.$padding_row;
+          height: 75px;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          position: relative;
+          font-size: 19px;
+          font-weight: 800;
+          @media (max-width: 767.98px) {
+            margin-right: 10px;
+            width: calc(v.$width_sec_small - 50px);
+            height: 59px;
+            font-size: 18px;
+            line-height: 1.2;
+          }
+          @media (min-width: 767.98px) and (max-width: 991.98px) {
+            width: calc(v.$width_sec_medium - 40px);
+          }
+          @at-root html[dir="rtl"]
+              section.comparison
+              div.container
+              div.comparison-bottom
+              div.table-headers
+              div.t-head.sec-header {
+            margin-right: 0;
+            margin-left: 20px;
+            @media (max-width: 767.98px) {
+              margin-right: 0;
+              margin-left: 10px;
+            }
+          }
+          &::after {
+            content: "";
+            width: calc(v.$width_sec);
+            height: calc(100% + 20px);
+            background-color: v.$sec_column_overlay;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            z-index: -1;
+            transform: translateX(-50%);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            @media (max-width: 767.98px) {
+              width: calc(v.$width_sec_small - 30px);
+              height: calc(100% + 10px);
+            }
+            @media (min-width: 767.98px) and (max-width: 991.98px) {
+              width: calc(v.$width_sec_medium);
+            }
+          }
+          &::before {
+            content: "";
+            width: v.$width_sec;
+            height: 55px;
+            background-color: v.$sec_column_overlay;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            z-index: -1;
+            transform: translateX(-50%);
+            background-color: v.$first_header_bg;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            @media (max-width: 767.98px) {
+              width: calc(v.$width_sec_small - 30px);
+              height: 62px;
+            }
+            @media (min-width: 767.98px) and (max-width: 991.98px) {
+              width: calc(v.$width_sec_medium);
+            }
+          }
+        }
+      }
+
+      div.table-rows {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 767.98px) {
+          // width: 328px;
+        }
+      }
+    }
+  }
+  div.container:nth-child(2) {
+    margin-top: 20px;
+    span.note {
+      display: block;
+      text-align: start;
+      font-size: 12px;
+      color: #77898f;
+    }
+  }
+}

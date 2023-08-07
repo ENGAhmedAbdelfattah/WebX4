@@ -1,0 +1,31 @@
+@use "../../../../../common/variable" as v;
+
+section.contactsLanding {
+  .container {
+    text-align: center;
+    padding: 0 15px;
+    margin-top: v.$margin_page_top;
+    h2 {
+      color: v.$pricing_header;
+      font-size: 42px;
+      font-weight: 800;
+      margin: auto;
+      margin-bottom: 5px;
+      @media (max-width: 767.98px) {
+        font-size: 28px;
+      }
+      @media (min-width: 767.98px) and (max-width: 991.98px) {
+        font-size: 35px;
+      }
+    }
+
+    p {
+      color: v.$pricing_paragraph;
+      font-size: 22px;
+      font-weight: 700;
+      max-width: 763px;
+      margin: auto;
+      line-height: 1.4;
+    }
+  }
+}

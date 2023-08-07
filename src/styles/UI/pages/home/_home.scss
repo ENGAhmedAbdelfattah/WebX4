@@ -1,0 +1,16 @@
+// sections
+@use "./sections/landing/landing";
+@use "./sections/howWork/howWork";
+@use "./sections/howWork/units/step";
+@use "./sections/features/features";
+@use "./sections/features/units/card";
+@use "./sections/comparison/comparison";
+@use "./sections/comparison/units/row";
+@use "./sections/pricingSection/pricingSection";
+@use "./sections/pricingSection/blocks/pricingLists";
+@use "./sections/pricingSection/blocks/units/pricingItem";
+.home {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}

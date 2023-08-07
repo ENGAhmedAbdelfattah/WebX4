@@ -1,0 +1,14 @@
+@use "./header/header" as header;
+@use "./header/header-rtl" as header-rtl;
+
+@mixin ltr {
+    @include header.ltr;
+    //pages
+    //footer
+}
+
+@mixin rtl {
+    @include header-rtl.rtl;
+    //pages
+    //footer
+}

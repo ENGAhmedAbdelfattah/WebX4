@@ -1,0 +1,190 @@
+@use "./../../../../../../../common/variable" as v;
+
+div.pricing-item {
+  background-color: v.$row_bg;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  // width: 200px;
+  border-radius: 20px;
+  // transform: scaleX(-1);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  min-height: 400px;
+  @media (max-width: 767.98px) {
+    gap: 30px;
+  }
+  div.body-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    div.pricing-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      h4.pricing-item-header {
+        font-size: 24px;
+        font-weight: 800;
+        color: v.$pricing_header;
+        line-height: 1;
+      }
+    }
+
+    div.pricing-item-advantage {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      div {
+        color: #b4bdc4;
+        display: flex;
+        gap: 10px;
+        div.text-advantage {
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+          h5,
+          span {
+            // color: v.$pricing_header;
+            // color: #586b78;
+            color: #576d7e;
+            line-height: 1.3;
+          }
+          h5.advantage-header {
+            font-weight: 800;
+            // min-width: 55px;
+            min-width: 59px;
+            @at-root html[dir="rtl"]
+                div.pricing-item
+                div.body-box
+                div.pricing-item-advantage
+                div.text-advantage
+                h5.advantage-header {
+              min-width: 47px;
+            }
+            &-5,
+            &-6 {
+              font-weight: 600;
+            }
+          }
+          span {
+            line-height: 1.2;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+        i.fa-solid.fa-circle-check {
+          color: v.$pricing_header;
+        }
+        i.fa-solid.fa-xmark {
+          color: #b4bdc4;
+          & + div.text-advantage h5.advantage-header {
+            color: #b4bdc4;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    div.pricing-item-price {
+      span.dolar {
+        color: v.$pricing_header;
+        font-size: 22px;
+      }
+      span.price-span {
+        color: v.$pricing_header;
+        font-weight: 800;
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 6px;
+        del {
+          font-size: 24px;
+          color: #bcc4ca;
+          font-weight: 700;
+        }
+        ins {
+          font-size: 30px;
+          text-decoration: none;
+          line-height: 1.4;
+        }
+      }
+      span.time {
+        color: #617786;
+        font-size: 16px;
+      }
+    }
+  }
+  button.pricing-item-btn {
+    border: none;
+    outline: none;
+    padding: 15px;
+    background-color: v.$white_color;
+    color: v.$pricing_header;
+    border-radius: 11px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
+
+div.pricing-item.active {
+  background-color: v.$pricing_header;
+  position: relative;
+  top: -30px;
+  @media (max-width: 991.98px) {
+    top: 0;
+  }
+  div.body-box {
+    div.pricing-item-top {
+      h4.pricing-item-header {
+        color: v.$white_color;
+      }
+    }
+
+    div.pricing-item-advantage {
+      div.text-advantage {
+        h5,
+        span {
+          color: v.$white_color;
+        }
+      }
+      i.fa-solid.fa-circle-check {
+        color: v.$white_color;
+      }
+      i.fa-solid.fa-xmark {
+        color: #607686;
+        & + div.text-advantage h5.advantage-header {
+          color: #607686;
+        }
+      }
+    }
+
+    div.pricing-item-price {
+      span.dolar {
+        color: v.$white_color;
+      }
+      span.price-span {
+        color: v.$white_color;
+      }
+      span.time {
+        color: #b6c0c8;
+      }
+    }
+  }
+
+  button.pricing-item-btn {
+    background-color: #00c7ff;
+    color: v.$white_color;
+  }
+}
+
+// div.item3 div.body-box div.pricing-item-advantage div.text-advantage h5 {
+//   font-weight: normal !important;
+// }

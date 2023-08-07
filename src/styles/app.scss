@@ -1,0 +1,47 @@
+@use "./vendors/normalize";
+@use "./base/base";
+@use "./my-framework/my-framework";
+@use "./helpers/keyframs" as *;
+@use "./UI/pages/contactus" as contactus;
+@use "./UI/pages/contactus-rtl" as contactus-rtl;
+@use "./UI/layout" as layout;
+
+// Load LTR styles when html[dir="ltr"] or html without dir attribute
+html {
+  @include layout.ltr;
+}
+// Load LTR styles when html[dir="rtl"] (overWrite)
+html[dir="rtl"] {
+  @include layout.rtl;
+}
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// test image section
+body {
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+.for-test-image {
+  display: block;
+  display: none;
+  // margin-top: 84px;
+  width: 100%;
+  filter: opacity(80%);
+  -webkit-filter: opacity(80%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  img {
+    display: block;
+    width: 100%;
+  }
+  z-index: -1;
+}
+

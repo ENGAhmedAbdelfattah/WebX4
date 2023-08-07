@@ -1,0 +1,69 @@
+@use "../../../../../common/variable" as v;
+
+section.pricing-landing {
+  // opacity: 50%;
+  div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    margin-top: v.$margin_page_top;
+    margin-bottom: 50px;
+    padding: 44px 42px 28px;
+    background-color: v.$pricing_page_bg;
+    border-radius: 43px;
+    @media (max-width: 767.98px) {
+      margin-bottom: 180px;
+    }
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+    }
+
+    div.pricing-left {
+      padding: 28px 0;
+      @media (max-width: 767.98px) {
+        text-align: center;
+      }
+      h2 {
+        font-size: 42px;
+        font-weight: 800;
+        max-width: 586px;
+        word-spacing: -3px;
+        letter-spacing: -1px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+        color: #1c3b52;
+        @media (max-width: 767.98px) {
+          font-size: 37px;
+        }
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: 700;
+        max-width: 600px;
+        word-spacing: 1px;
+        animation: up-p-header 0.7s 0.3s both, show-opacity 1.2s 0.3s both;
+        color: #576d7e;
+        @media (max-width: 767.98px) {
+          font-size: 21px;
+        }
+      }
+    }
+
+    div.pricing-right {
+      div.hand-img {
+        width: 480px;
+        position: relative;
+        top: 4px;
+        @media (max-width: 767.98px) {
+          width: 290px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

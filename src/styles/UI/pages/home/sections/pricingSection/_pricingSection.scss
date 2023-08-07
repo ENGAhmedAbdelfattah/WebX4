@@ -1,0 +1,28 @@
+@use "./../../../../../common/variable" as v;
+
+section.pricing {
+  margin-top: 45px;
+  overflow-x: hidden;
+  div.container {
+    div.pricing-top {
+      text-align: center;
+      h2.pricing-header {
+        a {
+          text-decoration: none;
+          font-size: 37px;
+          font-weight: 800;
+          margin-bottom: 4px;
+          color: v.$pricing_header;
+          word-spacing: -1px;
+        }
+      }
+
+      p.pricing-paragraph {
+        font-size: v.$subtitle;
+        font-weight: 700;
+        color: v.$pricing_paragraph;
+        word-spacing: -1px;
+      }
+    }
+  }
+}

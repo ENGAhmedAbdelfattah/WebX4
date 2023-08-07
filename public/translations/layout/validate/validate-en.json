@@ -1,0 +1,6 @@
+{
+  "errorMsg": {
+    "required": "Required",
+    "invalid": "Invalid email format"
+  }
+}

@@ -1,0 +1,9 @@
+@keyframes loading{
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(0.3) rotate(360deg);
+    }
+}
+

@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "lang": "عربي",
+    "navList": [
+      {
+        "id": "link-1",
+        "name": "Home",
+        "path": "/"
+      },
+      {
+        "id": "link-2",
+        "name": "skills",
+        "path": "/skills"
+      },
+      {
+        "id": "link-3",
+        "name": "Works",
+        "path": "/works"
+      },
+      {
+        "id": "",
+        "name": "Contact",
+        "path": "/contact"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+@use "./../../../../../../common/variable" as v;
+
+div.pricing-block-box {
+  div.pricing-block-bottom {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+    padding: 34px;
+    @media (max-width: 767.98px) {
+      padding: 0px;
+    }
+  }
+}

@@ -4,19 +4,33 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "t": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.4.0",
+    "@reduxjs/toolkit": "^1.9.3",
     "@types/node": "20.4.6",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
+    "axios": "^1.4.0",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
+    "negotiator": "^0.6.3",
     "next": "13.4.12",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.0.5",
+    "server-only": "^0.0.1",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/negotiator": "^0.6.1",
+    "babel-plugin-styled-components": "^2.1.4",
+    "sass": "^1.64.2"
   }
 }

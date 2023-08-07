@@ -1,0 +1,181 @@
+@use "./../../../../../../common/variable" as v;
+
+div.Step-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  gap: 0px;
+  max-width: 283px;
+  @media (max-width: 767.98px) {
+    align-items: center;
+    text-align: center;
+  }
+  div.hand-img {
+    width: 85px;
+    height: 85px;
+    background-color: v.$white_color;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 0 0 #dff2fc;
+    position: relative;
+    z-index: 2;
+    .image-in {
+      width: 34px;
+      height: 34px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  div.text-box {
+    position: relative;
+    h4 {
+      color: v.$step_header;
+      font-size: 23px;
+      font-weight: 800;
+      transition: 0.5s;
+      margin-bottom: 4px;
+    }
+    p {
+      color: v.$step_header;
+      font-size: 17px;
+      font-weight: 500;
+      transition: 0.5s;
+      max-width: 245px;
+    }
+    div.img-after-hand {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 66px;
+      @at-root html[dir="rtl"] div.Step-item div.text-box div.img-after-hand {
+        right: auto;
+        left: -40px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &.step1 {
+    margin-top: 172px;
+    position: relative;
+    top: -23px;
+    left: 35px;
+    @media (max-width: 767.98px) {
+      margin-top: 35px;
+      top: 0;
+      left: 0;
+    }
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+      top: 0;
+      left: 95px;
+    }
+    @at-root html[dir="rtl"] div.Step-item.step1 {
+      right: -28px;
+      top: -2px;
+
+      @media (max-width: 767.98px) {
+        left: auto;
+        right: 0;
+      }
+      @media (min-width: 767.98px) and (max-width: 991.98px) {
+        top: -23px;
+        left: auto;
+        right: -37px;
+      }
+    }
+    div.text-box {
+      div.img-after-hand {
+        top: -86px;
+        right: 19px;
+        width: 66px;
+      }
+    }
+  }
+  &.step2 {
+    margin-top: 21px;
+    position: relative;
+    top: 0;
+    left: 129px;
+    @media (max-width: 767.98px) {
+      margin-top: 0px;
+      top: 0;
+      left: 0;
+    }
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+      top: -7px;
+    }
+    @at-root html[dir="rtl"] div.Step-item.step2 {
+      left: auto;
+      right: 45px;
+      @media (max-width: 767.98px) {
+        margin-top: 0px;
+        left: auto;
+        right: 0;
+      }
+      @media (min-width: 767.98px) and (max-width: 991.98px) {
+        top: 41px;
+        right: 45px;
+      }
+    }
+    div.text-box {
+      div.img-after-hand {
+        width: 93px;
+        top: -89px;
+      }
+    }
+  }
+  &.step3 {
+    margin-top: -214px;
+    position: relative;
+    top: 0;
+    left: 143px;
+    // width: 56px;
+    // height: 56px;
+    div.hand-img {
+      .image-in {
+        width: 56px;
+        height: 56px;
+      }
+    }
+    @media (max-width: 767.98px) {
+      margin-top: 0px;
+      top: 0;
+      left: 0;
+    }
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+      top: 11px;
+      left: 95px;
+    }
+    @at-root html[dir="rtl"] div.Step-item.step3 {
+      left: auto;
+      right: 215px;
+      @media (max-width: 767.98px) {
+        margin-top: 0px;
+        left: auto;
+        right: 0;
+      }
+      @media (min-width: 767.98px) and (max-width: 991.98px) {
+        left: auto;
+        top: 116px;
+        right: 166px;
+      }
+    }
+    div.text-box {
+      div.img-after-hand {
+        width: 93px;
+        top: -78px;
+        z-index: 1;
+      }
+    }
+  }
+}

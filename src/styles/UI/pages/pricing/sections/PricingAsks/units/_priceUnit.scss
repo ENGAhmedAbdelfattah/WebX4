@@ -1,0 +1,68 @@
+@use "../../../../../../common/variable" as v;
+
+div.price-unit {
+  background-color: v.$pricing_page_bg;
+  padding: 0px 15px;
+  border-radius: 20px;
+  width: 100%;
+  div.unit-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    cursor: pointer;
+    width: 100%;
+    div.unit-top-left {
+      display: flex;
+      gap: 8px;
+      font-size: 19px;
+      @media (max-width: 767.98px) {
+        font-size: 17px;
+      }
+      @media (min-width: 767.98px) and (max-width: 991.98px) {
+        font-size: 18px;
+      }
+      h4.ask {
+        font-weight: 700;
+        word-spacing: -2px;
+        color: v.$pricing_header;
+      }
+    }
+
+    i.fas.fa-angle-down {
+      font-size: 19px;
+      // padding: 0 5px;
+      color: v.$pricing_header;
+      cursor: pointer;
+      transition: 0.3s;
+      @media (max-width: 767.98px) {
+        font-size: 17px;
+      }
+      @media (min-width: 767.98px) and (max-width: 991.98px) {
+        font-size: 18px;
+      }
+      &.active {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  p.answer {
+    height: 0;
+    font-size: 15px;
+    max-width: 1005px;
+    color: v.$pricing_header;
+    overflow-y: hidden;
+    transition: height 0.3s;
+    &.active {
+      height: 47px;
+      margin-bottom: 12px;
+      @media (max-width: 767.98px) {
+        height: 66px;
+      }
+      @media (min-width: 767.98px) and (max-width: 991.98px) {
+        height: 70px;
+      }
+    }
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "home": {
+    "landing": {
+      "header": " your videos NOW. Streaming made easy.",
+      "headerSpan": "Upload",
+      "btnStart": "START NOW",
+      "btnDocs": "DOCS"
+    },
+    "howWork": {
+      "header": "How do Omega work?",
+      "paragraph": "With only 3 simple steps you will have your video ready.",
+      "steps": [
+        {
+          "id": "step1",
+          "header": "UPLOAD YOUR VIDEO",
+          "paragraph": "Select and upload your favorite video."
+        },
+        {
+          "id": "step2",
+          "header": "PROCESSING",
+          "paragraph": "Let us process the video in less than 15 minutes. *"
+        },
+        {
+          "id": "step3",
+          "header": "VIDEO READY",
+          "paragraph": "Your video is now ready to watch in your Website/Mobile app."
+        }
+      ],
+      "note": "* Omega is assuming that your average FHD video size is 2.5 Gib and 30 FPS."
+    },
+    "features": {
+      "header": "Our Features",
+      "paragraph": "",
+      "cards": {
+        "left": [
+          {
+            "id": "card1",
+            "header": "Upload Videos Easily",
+            "paragraph": "You can easily select any video from your computer and add metadata."
+          },
+          {
+            "id": "card2",
+            "header": "Blazingly Fast Processing",
+            "paragraph": "Omega infrastructure is built to handle millions of concurrent requests worldwide."
+          }
+        ],
+        "right": [
+          {
+            "id": "card3",
+            "header": "High Performance",
+            "paragraph": "Know What Your Audience Likes. & How Your ContentIs Performing."
+          },
+          {
+            "id": "card4",
+            "header": "Fast delivery network",
+            "paragraph": "Using the Best CDNs to serve our clients with consistent speed."
+          }
+        ],
+        "bottom": [
+          {
+            "id": "card5",
+            "header": "Analytics",
+            "paragraph": "Collecting streaming and watching analytics about your audience is our key features for you."
+          },
+          {
+            "id": "card6",
+            "header": "APIs that don’t require video expertise",
+            "paragraph": "Omega provides simple APIs that every engineer on your team already knows. You never need to learn about new protocols, video formats or encoding pipelines — we optimize all of this for you."
+          },
+          {
+            "id": "card7",
+            "header": "Adapts to your viewers’ bandwidth",
+            "paragraph": "Omega automatically encodes and delivers the ideal quality for each individual viewer, whether they’re on 4G on their phone or watching on the big screen at home."
+          }
+        ]
+      }
+    },
+    "comparison": {
+      "header": "Comparison",
+      "paragraph": "Omega has the best of every world to help you scale to the moon",
+      "columns": {
+        "firstHeader": "Vimeo",
+        "secHeader": "Omega Stream"
+      },
+      "rows": [
+        {
+          "id": "row1",
+          "header": "Videos limit",
+          "first": "< 200 video / year",
+          "sec": "Unlimited"
+        },
+        {
+          "id": "row2",
+          "header": "Traffic-month (TiB)",
+          "first": "< 2 TiB",
+          "sec": "Starting from 4 TiB",
+          "num": "*(1)"
+        },
+        {
+          "id": "row3",
+          "header": "Storage-month",
+          "first": "Not specified",
+          "sec": "Starting from 400 GiB",
+          "num": "*(1)"
+        },
+        {
+          "id": "row4",
+          "header": "Payment Interval",
+          "first": "Only annually",
+          "sec": "Monthly & annually"
+        },
+        {
+          "id": "row5",
+          "header": "Domain Restriction/ Authentication",
+          "first": "Limited",
+          "sec": "Fully supported and easy to use."
+        },
+        {
+          "id": "row6",
+          "header": "Multiple Quality Bitrates",
+          "first": "Available",
+          "sec": "Fully supported"
+        },
+        {
+          "id": "row7",
+          "header": "Supported Streaming Protocols",
+          "first": "Only HLS",
+          "sec": "Supports HLS and Dash"
+        },
+        {
+          "id": "row8",
+          "header": "Analytics & Usage Reports",
+          "first": "Limited",
+          "sec": "Supports Traffic and views analytics for each video"
+        },
+        {
+          "id": "row9",
+          "header": "Delivery Time",
+          "first": "More than 150ms",
+          "sec": "About 90ms",
+          "num": "*(2)"
+        },
+        {
+          "id": "row10",
+          "header": "White-Label Player",
+          "first": "Limited",
+          "sec": "Fully supported and tested"
+        },
+        {
+          "id": "row11",
+          "header": "CDN",
+          "first": "Supported",
+          "sec": "Optimized for the Middle East"
+        },
+        {
+          "id": "row12",
+          "header": "Upload API",
+          "first": "Not supported",
+          "sec": "Fully supported"
+        },
+        {
+          "id": "row13",
+          "header": "Resumable uploads",
+          "first": "Limited",
+          "sec": "Fully optimized"
+        },
+        {
+          "id": "row14",
+          "header": "Pull videos from other sites",
+          "first": "Not supported",
+          "sec": "Pull your videos from YouTube, Vimeo and more"
+        },
+        {
+          "id": "row15",
+          "header": "Support for basic plans",
+          "first": "Only Email",
+          "sec": "Email, Live chat, and WhatsApp"
+        },
+        {
+          "id": "row16",
+          "header": "Multi-user access",
+          "first": "Limited",
+          "sec": "Unlimited users’ access"
+        },
+        {
+          "id": "row17",
+          "header": "All Security Features",
+          "first": "Limited",
+          "sec": "Fully supported"
+        },
+        {
+          "id": "row18",
+          "header": "Easy To Embed",
+          "first": "Limited",
+          "sec": "Can be embedded in Web and Mobile"
+        }
+      ],
+      "notes": [
+        "(1) You can purchase more storage and bandwidth to handle your temporary peak load.",
+        "(2) This measure is based on the response time from Frankfort, Germany to Cairo, Egypt."
+      ]
+    },
+    "pricing": {
+      "header": "Flexible pricing plans for you",
+      "paragraph": "Pricing that scales with your business immediately.",
+      "items": [
+        {
+          "id": "item1",
+          "header": "Intro",
+          "isActive": "false",
+          "advantage": [
+            {
+              "id": "advantage1",
+              "header": "Storage",
+              "text": "400 GiB"
+            },
+            {
+              "id": "advantage2",
+              "header": "Traffic",
+              "text": "3 TiB"
+            },
+            {
+              "id": "advantage3",
+              "header": "Support",
+              "text": "Email"
+            },
+            {
+              "id": "advantage6",
+              "header": "Analytics",
+              "text": "Traffic Only"
+            },
+            {
+              "id": "advantage4",
+              "header": "Multi-User Access",
+              "statues": "truePro"
+            },
+            {
+              "id": "advantage5",
+              "header": "Pulling Video",
+              "statues": "false"
+            }
+          ],
+          "priceDefault": "60",
+          "priceAfterDiscount": "40"
+        },
+        {
+          "id": "item2",
+          "header": "Base",
+          "isActive": "false",
+          "advantage": [
+            {
+              "id": "advantage1",
+              "header": "Storage",
+              "text": "1 TiB"
+            },
+            {
+              "id": "advantage2",
+              "header": "Traffic",
+              "text": "5 TiB"
+            },
+            {
+              "id": "advantage3",
+              "header": "Support",
+              "text": "Email & Live Chat"
+            },
+            {
+              "id": "advantage6",
+              "header": "Analytics",
+              "text": "Basic"
+            },
+            {
+              "id": "advantage4",
+              "header": "Multi-User Access",
+              "statues": "truePro"
+            },
+            {
+              "id": "advantage5",
+              "header": "Pulling Video",
+              "statues": "truePro"
+            }
+          ],
+          "priceDefault": "130",
+          "priceAfterDiscount": "90"
+        },
+        {
+          "id": "item3",
+          "header": "Super",
+          "isActive": "true",
+          "advantage": [
+            {
+              "id": "advantage1",
+              "header": "Storage",
+              "text": "2 TiB"
+            },
+            {
+              "id": "advantage2",
+              "header": "Traffic",
+              "text": "8 TiB"
+            },
+            {
+              "id": "advantage3",
+              "header": "Support",
+              "text": "Email, Live Chat & Phone"
+            },
+            {
+              "id": "advantage6",
+              "header": "Analytics",
+              "text": "Advanced"
+            },
+            {
+              "id": "advantage4",
+              "header": "Multi-User Access",
+              "statues": "truePro"
+            },
+            {
+              "id": "advantage5",
+              "header": "Pulling Video",
+              "statues": "truePro"
+            }
+          ],
+          "priceDefault": "190",
+          "priceAfterDiscount": "165"
+        },
+        {
+          "id": "item4",
+          "header": "Enterprise",
+          "isActive": "false",
+          "advantage": [
+            {
+              "id": "advantage1",
+              "header": "Storage",
+              "text": "Contact Us"
+            },
+            {
+              "id": "advantage2",
+              "header": "Traffic",
+              "text": "Contact Us"
+            },
+            {
+              "id": "advantage3",
+              "header": "Support",
+              "text": "All"
+            },
+            {
+              "id": "advantage6",
+              "header": "Analytics",
+              "text": "Advanced"
+            },
+            {
+              "id": "advantage4",
+              "header": "Multi-User Access",
+              "statues": "truePro"
+            },
+            {
+              "id": "advantage5",
+              "header": "Pulling Video",
+              "statues": "truePro"
+            }
+          ]
+        }
+      ],
+      "time": "/month",
+      "btnChoose": "Choose plan",
+      "btnContact": "Contact Us",
+      "coins": "$"
+    },
+    "asks": {
+      "header": "Frequently Asked Questions",
+      "paragraph": "",
+      "items": [
+        {
+          "id": "item1",
+          "ask": "What is Omega Streaming?",
+          "answer": "Omega is a very simple serverless on-demand video streaming service, that enables you to Upload, store, encode and deliver live and on-demand video with one API easily and with the latest technology."
+        },
+        {
+          "id": "item2",
+          "ask": "How can I trust you?",
+          "answer": "Omega is using its own storage servers that is not accessible by no 3rd party service or person. Your videos are secured on our service and only accessible by you."
+        },
+        {
+          "id": "item3",
+          "ask": "How can I watch my videos?",
+          "answer": "Omega provides an embedded web player that requires zero engineering work to use, and lets you integrate with any web or native iOS or Android video player that supports HLS or DASH."
+        },
+        {
+          "id": "item4",
+          "ask": "How do I cancel?",
+          "answer": "Omega is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime."
+        },
+        {
+          "id": "item5",
+          "ask": "How can we get in touch?",
+          "answer": "You can contact us easily via Email, Live chat, WhatsApp, or Phone."
+        }
+      ]
+    }
+  }
+}

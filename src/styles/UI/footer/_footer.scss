@@ -1,0 +1,73 @@
+@use "../../../styles/common/variable" as v;
+
+footer.footer {
+  overflow-x: hidden;
+  padding: 30px 0 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+  background-color: v.$footer_color;
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+  div.logo-footer {
+    background-color: v.$white_color;
+    border-radius: 50%;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    .handle-image {
+      width: 90px;
+      height: 90px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  div.links-footer {
+    ul.list-ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 56px;
+      font-size: 15px;
+      @media (max-width: 767.98px) {
+        gap: 24px;
+        font-size: 15px;
+        flex-direction: column;
+      }
+      li.list-item {
+        a.list-item {
+          text-decoration: none;
+          color: #7a94a5;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 100%;
+    border-top: 1px solid v.$footer_line;
+    border-bottom: 1px solid v.$footer_line;
+  }
+
+  div.copy-right-footer {
+    text-align: end;
+    color: #8398ad;
+    font-weight: bold;
+    font-size: 13px;
+    @media (max-width: 767.98px) {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+}

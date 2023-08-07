@@ -1,0 +1,29 @@
+@use "./../../config-directions/direction-ltr" as *;
+
+@mixin rtl {
+  header {
+    div.container {
+      div.image-hand {
+        img {
+        }
+      }
+
+      ul.link-list {
+        li {
+          link {
+          }
+        }
+      }
+
+      div.theme-hand {
+        themeswitcher {
+        }
+      }
+
+      div {
+        link {
+        }
+      }
+    }
+  }
+}

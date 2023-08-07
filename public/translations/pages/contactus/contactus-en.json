@@ -1,0 +1,35 @@
+{
+  "contactsPage": {
+    "contactLanding": {
+      "header": "Let’s send us message",
+      "paragraph": "You can know more about us and our works, we you write your email and send us a message."
+    },
+    "contactItems": [
+      {
+        "id": "contactItem1",
+        "itemHeader": "Phone",
+        "contactAddress": "+20105 252 5525"
+      },
+      {
+        "id": "contactItem2",
+        "itemHeader": "Gmail",
+        "contactAddress": "info@omegastream.net"
+      },
+      {
+        "id": "contactItem3",
+        "itemHeader": "WhatsApp",
+        "contactAddress": "+20 155 154 5973 /  +20 109 661 3959"
+      }
+    ],
+    "contactForm": {
+      "fromHeader": "Or fill this form",
+      "fromParagraph": "You can know more about us and our works, we you write your email and send us a message.",
+      "fromPlaceholder": {
+        "name": "Enter your name",
+        "email": "Enter your email",
+        "message": "Your Message Here"
+      },
+      "fromBtn": "Send Message"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@use "./sections/PricingLanding/pricingLanding";
+@use "./sections/PricingAsks/pricingAsks.scss";
+@use "./sections/PricingAsks/units/priceUnit";
+
+.pricing-page {
+  overflow-x: hidden;
+}
