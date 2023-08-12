@@ -1,4 +1,78 @@
-// color variable
-$main_color: #042784;
-$main_color_hover: #042784;
+// background skills #53555778
+// category images in dark mode => style={{  filter: "brightness(300%) invert(26%)"}} or the best for me style={{  filter: "brightness(2) "}}
+// #dce7f0a3
+// rgb(12 41 118); => #C1294C
+// aliceblue
+// rgb(225 235 247) => #E1EBF7 => best for paragraph
 
+
+
+// light
+$main_color-light: #042784;
+$background-color-light: #ffffff;
+$main_color_Two-light: #001653;
+$second_color-light: #374c86;
+$paragraph_color-light: #6a748f;
+$bg-main-color-light: #ccdce9b6;
+$bg-main-color-two-light: #ccdce978;
+// dark
+$main-color-dark: darken($main-color-light, 20%);
+$background-color-dark: darken($background-color-light, 20%);
+$main_color_Two-dark: darken($main_color_Two-light, 20%);
+$second_color-dark: darken($second_color-light, 20%);
+$paragraph_color-dark: darken($paragraph_color-light, 20%);
+$bg-main-color-dark: darken($bg-main-color-light, 20%);
+$bg-main-color-two-dark: darken($bg-main-color-two-light, 20%);
+
+html {
+  --main-color: $main-color-light;
+  --background-color: $background-color-light;
+  --main_color_Two: $main_color_Two-light;
+  --second_color: $second_color-light;
+  --paragraph_color: $paragraph_color-light;
+  --bg-main-color: $bg-main-color-light;
+  --bg-main-color-two: $bg-main-color-two-light;
+
+  &.dark {
+    --main-color: $main-color-dark;
+    --background-color: $background-color-dark;
+    --main_color_Two: $main_color_Two-dark;
+    --second_color: $second_color-dark;
+    --paragraph_color: $paragraph_color-dark;
+    --bg-main-color: $bg-main-color-dark;
+    --bg-main-color-two: $bg-main-color-two-dark;
+  }
+
+  color: var(--main-color);
+  background-color: var(--background-color);
+  transition: color 0.3s, background-color 0.3s;
+}
+
+
+// color variable "light"
+// $main_color: #042784;
+// $background-color: #ffffff;
+// $main_color_Two: #001653;
+// $second_color: #374c86;
+// $paragraph_color: #6a748f;
+// $bg-main-color: #ccdce9b6;
+// $bg-main-color-two: #ccdce978;
+
+
+// $main_color-light: $main_color;
+// $background-color-light: $main_color_Two;
+// $main_color_Two-light: $second_color;
+// $second_color-light: $paragraph_color;
+// $paragraph_color-light: $bg-main-color;
+// $bg-main-color-light: $bg-main-color-two;
+// $bg-main-color-two-light: $background-color;
+
+
+// // dark
+// $main-color-dark: darken($main-color, 20%);
+// $background-color-dark: darken($background-color, 20%);
+// $main_color_Two-dark: darken($main_color_Two, 20%);
+// $second_color-dark: darken($second_color, 20%);
+// $paragraph_color-dark: darken($paragraph_color, 20%);
+// $bg-main-color-dark: darken($bg-main-color, 20%);
+// $bg-main-color-two-dark: darken($bg-main-color-two, 20%);

@@ -1,0 +1,91 @@
+.marvel-device.macbook {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-16%, -17.5%) scale(0.5);
+  @media (max-width: 991.98px){
+    transform: translate(-16%, -25.5%) scale(0.5);
+  }
+  @media (max-width: 767.98px){
+  	display: none;
+  }
+  @at-root html[dir="rtl"] .marvel-device.macbook {
+    @media (min-width: 991.98px){
+      transform: translate(-80%, -17.5%) scale(0.5);
+    }
+  }
+  div.iframe-box {
+    position:relative;
+    // left:24.8%;
+    // top:50%;
+    // width: 100%;
+    height: 200%;
+    iframe.iframe-device {
+      @media (max-width: 991.98px){
+        transform: scale(0.5);
+        width: 200%;
+        height: 100%;
+        position: absolute;
+        left: -50%;
+        top: -25%;
+      }
+    }
+  }
+}
+
+.marvel-device.iphone-x {
+  // transform: scale(0.6);
+  @media (min-width: 768px){
+    display: none;
+  }
+  @media (max-width: 991.98px){
+    height: 570px !important;
+    width: 300px !important;
+  }
+  .notch {
+    @media (max-width: 991.98px){
+      display: none !important;
+      width: 180px !important;
+      left: 81px !important;
+    }
+  }
+  div.iframe-box {
+    position:relative;
+    // left:24.8%;
+    // top:50%;
+    // width: 100%;
+    height: 200%;
+    iframe.iframe-device {
+      @media (max-width: 991.98px){
+        transform: scale(0.5);
+        width: 200%;
+        height: 100%;
+        position: absolute;
+        left: -50%;
+        top: -25%;
+      }
+    }
+  }
+}
+
+// transform: translate(-17%, -84.5%) scale(0.5);
+// .marvel-device.macbook, .marvel-device.iphone-x
+// transform: translate(-50%,-50%) scale(0.8);
+
+// position: relative;
+//     left: -349px;
+//     top: -201px;
+
+
+// transform: translate(0%, -21.5%) scale(0.6);
+
+
+// for omega in mobile in small screen =>not good for footer
+// iframe {
+// transform: scale(0.7);
+// width: 200%;
+// height: 100%;
+// position: absolute;
+// left: -48%;
+// top: -15%;
+// }

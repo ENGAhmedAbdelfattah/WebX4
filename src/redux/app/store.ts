@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
+import activeNavReducer from "../features/activeNav/activeNavSlice";
+import activeSkillsReducer from "../features/activeSkills/activeSkillsSlice";
 import apiDataReducer from "../features/apiData/apiDataSlice";
 import dataAuthReducer from "../features/dataAuth/dataAuthSlice";
-import activeNavReducer from "../features/activeNav/activeNavSlice";
 
 const store = configureStore({
   reducer: {
     activeNav: activeNavReducer,
+    activeSkills: activeSkillsReducer,
     apiData: apiDataReducer,
     dataAuth: dataAuthReducer,
   },

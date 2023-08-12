@@ -1,0 +1,40 @@
+@use "./../../helpers/variable" as v;
+
+div.header-sections-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  @media (max-width: 991.98px){
+    text-align: center;
+    margin: auto;
+    // width: fit-content;
+  }
+  h2.header-sections-text {
+    width: fit-content;
+    font-weight: 900;
+    // font-size: 55px;
+    font-size: 43px;
+    color: var(--main_color_Two);
+    @media (max-width: 767.98px){
+      text-align: center;
+      margin: auto;
+      background-color: var(--header_section_bg);
+    }
+  }
+
+  hr {
+    display: block;
+    width: 100%;
+    flex: 1;
+    color: var(--hr-color);
+    background-color: var(--hr-color);
+    height: 2px;
+    border:none;
+    @media (max-width: 767.98px){
+    	position: absolute;
+      left:0;
+      z-index: -1;
+    }
+  }
+}

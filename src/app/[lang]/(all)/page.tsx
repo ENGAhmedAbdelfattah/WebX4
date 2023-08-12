@@ -1,18 +1,20 @@
 import { lang } from "@/types/lang";
 import { getTranslate } from "@/utils/getTranslate";
-import Image from "next/image";
-import logo2 from "@/../public/images/logo.png";
+import Landing from "@/components/UI/pages/home/sections/landing/Landing";
+import Skills from "@/components/UI/pages/home/sections/skills/Skills";
+import WorksSection from "@/components/UI/pages/home/sections/worksSection/WorksSection";
 
 type props = {
   params: { lang: lang };
 };
 
 export default async function Home({ params: { lang } }: props) {
-  // const dict = await getTranslate(lang);
+  const direc = await getTranslate(lang, "home");
   return (
     <main>
-      home
-      <Image src={logo2} alt="" width={100} height={100} />
+      <Landing lang={lang} t={direc.home.landing}/>
+      <Skills lang={lang} t={direc.home.skills}/>
+      <WorksSection lang={lang} t={direc.home.worksSection}/>
     </main>
   );
 }

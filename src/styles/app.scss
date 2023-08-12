@@ -1,28 +1,88 @@
 @use "./vendors/normalize";
 @use "./base/base";
-@use "./my-framework/my-framework";
-@use "./helpers/keyframs" as *;
-@use "./UI/pages/contactus" as contactus;
-@use "./UI/pages/contactus-rtl" as contactus-rtl;
-@use "./UI/layout" as layout;
-
-// Load LTR styles when html[dir="ltr"] or html without dir attribute
-html {
-  @include layout.ltr;
-}
-// Load LTR styles when html[dir="rtl"] (overWrite)
-html[dir="rtl"] {
-  @include layout.rtl;
-}
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
+@use "./myFramework/myFramework";
+@use "./myFramework/keyframs" as *;
+@use "./UI/layout";
+@use "./helpers/variable";
 // test image section
+
+// light
+$main_color-light: #042784;
+$background-color-light: #ffffff;
+$main_color_Two-light: #001653;
+$second_color-light: #374c86;
+// #6a748f
+// #656f88;
+$paragraph_color-light: #586177;
+$bg-main-color-light: #ccdce9b6;
+$bg-main-color-two-light: #ccdce978;
+$skill-header: #374C86;
+$main-btn-color: #001653;
+$hr-color: #ddd;
+$header-border-color: #eeeeee;
+$header_section_bg: #ffffff;
+$bg-main-color: #ccdce9b6;
+$bg-main-color-two: #ccdce978;
+
+// dark
+// #EDE8E0
+$main-color-dark: #91d5ff;
+$background-color-dark: #161819;
+$main_color_Two-dark: #ede8e0;
+$second_color-dark: #9FC3EE;
+// #d9e0e8
+$paragraph_color-dark: #E1EBF7;
+$skill-header-dark: #9fc3ee;
+$main-btn-color-dark: $main-btn-color;
+$hr-color-dark: #313638;
+$header-border-color-dark: #3d4244;
+$header_section_bg-dark: #161819;
+$bg-main-color-dark: #ccdce9b6;
+$bg-main-color-two-dark: #232627;
+
+:root {
+    --main_color: #{$main-color-light};
+    --background-color: #{$background-color-light};
+    --main_color_Two: #{$main_color_Two-light};
+    --second_color: #{$second_color-light};
+    --paragraph_color: #{$paragraph_color-light};
+    --skill-header: #{$skill-header};
+    --main-btn-color: #{$main-btn-color};
+    --hr-color: #{$hr-color};
+    --header-border-color: #{$header-border-color};
+    --header_section_bg: #{$header_section_bg}
+    --bg-main-color: #{$bg-main-color};
+    --bg-main-color-two: #{$bg-main-color-two};
+}
+html {
+  &.dark {
+    body {
+      --main_color: #{$main-color-dark};
+      --background-color: #{$background-color-dark};
+      --main_color_Two: #{$main_color_Two-dark};
+      --second_color: #{$second_color-dark};
+      --paragraph_color: #{$paragraph_color-dark};
+      // --bg-main-color: #{$bg-main-color-dark};
+      // --bg-main-color-two: #{$bg-main-color-two-dark};
+      --skill-header: #{$skill-header-dark};
+      --main-btn-color: #{$main-btn-color-dark};
+      --hr-color: #{$hr-color-dark};
+      --header-border-color: #{$header-border-color-dark};
+      --header_section_bg: #{$header_section_bg-dark};
+      --bg-main-color: #{$bg-main-color-dark};
+      --bg-main-color-two: #{$bg-main-color-two-dark};
+
+
+
+    }
+  }
+
+  color: var(--main_color);
+  background-color: var(--background-color);
+  transition: color 0.3s, background-color 0.3s;
+}
+
+
 body {
   background-color: transparent;
   position: relative;
@@ -33,8 +93,8 @@ body {
   display: none;
   // margin-top: 84px;
   width: 100%;
-  filter: opacity(80%);
-  -webkit-filter: opacity(80%);
+  // filter: opacity(80%);
+  // -webkit-filter: opacity(80%);
   position: absolute;
   left: 0;
   top: 0;
@@ -45,3 +105,4 @@ body {
   z-index: -1;
 }
 
+// color.lightness(

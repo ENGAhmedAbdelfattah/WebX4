@@ -1,0 +1,36 @@
+button.category-skills-item {
+  text-align: center;
+  background-color: transparent;
+  width: 100%;
+  padding: 5px;
+  div.image-hand {
+    width: 100%;
+    img.category-img {
+      @at-root html.dark button.category-skills-item div.image-hand img.category-img {
+        filter: brightness(300%) invert(26%);
+        // filter: brightness(2);
+      }
+      @media (max-width: 767.98px){
+        width:50px;
+      }
+      @media (min-width: 767.98px) and (max-width: 991.98px){
+        width:70px;
+      }
+    }
+  }
+
+  h3.header {
+    font-weight: 500;
+    line-height: 1;
+    @media (max-width: 767.98px){
+      font-size: 14px;
+    }
+    @media (min-width: 767.98px) and (max-width: 991.98px){
+      font-size: 16px;
+    }
+  }
+  &.active {
+    background-color: #91a1bb70;
+    border-radius: 5px;
+  }
+}

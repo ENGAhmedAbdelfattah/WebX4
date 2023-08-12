@@ -1,0 +1,323 @@
+{
+  "home": {
+    "landing": {
+      "hi": "Hi, I AM",
+      "landingHeader": "Ahmed Abdelfattah",
+      "landingSubheader": "MERN Stack Developer",
+      "landingParagraph": "Passionate web developer excelling in modern web applications, innovating for seamless, exceptional user experiences.",
+      "headerBtn": "Check out my works"
+    },
+    "skills": {
+      "header": "Skills",
+      "leftItems": [
+        {
+          "id": "category1",
+          "activeName": "frontend",
+          "categoryImg": "categoryImg1",
+          "header": "Front End"
+        },
+        {
+          "id": "category2",
+          "activeName": "backend",
+          "categoryImg": "categoryImg2",
+          "header": "Back End"
+        },
+        {
+          "id": "category3",
+          "activeName": "uiux",
+          "categoryImg": "categoryImg3",
+          "header": "UI-UX"
+        },
+        {
+          "id": "category4",
+          "activeName": "tools",
+          "categoryImg": "categoryImg4",
+          "header": "Tools"
+        }
+      ],
+      "rightItems": {
+        "frontend": [
+          {
+            "id": "frontend-item1",
+            "frontendImg": "frontendImg1",
+            "paragraph": "HTML"
+          },
+          {
+            "id": "frontend-item2",
+            "frontendImg": "frontendImg2",
+            "paragraph": "CSS"
+          },
+          {
+            "id": "frontend-item3",
+            "frontendImg": "frontendImg3",
+            "paragraph": "JavaScript"
+          },
+          {
+            "id": "frontend-item4",
+            "frontendImg": "frontendImg4",
+            "paragraph": "TypeScript"
+          },
+          {
+            "id": "frontend-item5",
+            "frontendImg": "frontendImg5",
+            "paragraph": "jQuery"
+          },
+          {
+            "id": "frontend-item6",
+            "frontendImg": "frontendImg6",
+            "paragraph": "Bootstrap"
+          },
+          {
+            "id": "frontend-item7",
+            "frontendImg": "frontendImg7",
+            "paragraph": "Sass"
+          },
+          {
+            "id": "frontend-item8",
+            "frontendImg": "frontendImg8",
+            "paragraph": "React"
+          },
+          {
+            "id": "frontend-item9",
+            "frontendImg": "frontendImg9",
+            "paragraph": "Redux"
+          },
+          {
+            "id": "frontend-item10",
+            "frontendImg": "frontendImg10",
+            "paragraph": "Next.js"
+          },
+          {
+            "id": "frontend-item11",
+            "frontendImg": "frontendImg11",
+            "paragraph": "Pug.js"
+          }
+        ],
+        "backend": [
+          {
+            "id": "backend-item1",
+            "backendImg": "backendImg1",
+            "paragraph": "Node.js"
+          },
+          {
+            "id": "backend-item2",
+            "backendImg": "backendImg2",
+            "paragraph": "Express"
+          },
+          {
+            "id": "backend-item3",
+            "backendImg": "backendImg3",
+            "paragraph": "MongoDB"
+          },
+          {
+            "id": "backend-item4",
+            "backendImg": "backendImg4",
+            "paragraph": "TypeScript"
+          }
+        ],
+        "uiux": [
+          {
+            "id": "uiux-item1",
+            "uiuxImg": "uiuxImg1",
+            "paragraph": "Figma"
+          },
+          {
+            "id": "uiux-item2",
+            "uiuxImg": "uiuxImg2",
+            "paragraph": "Adobe XD"
+          }
+        ],
+        "tools": [
+          {
+            "id": "tools-item1",
+            "toolsImg": "toolsImg1",
+            "paragraph": "Git"
+          },
+          {
+            "id": "tools-item2",
+            "toolsImg": "toolsImg2",
+            "paragraph": "Github"
+          },
+          {
+            "id": "tools-item3",
+            "toolsImg": "toolsImg3",
+            "paragraph": "NPM"
+          },
+          {
+            "id": "tools-item4",
+            "toolsImg": "toolsImg4",
+            "paragraph": "Yarn"
+          },
+          {
+            "id": "tools-item5",
+            "toolsImg": "toolsImg5",
+            "paragraph": "Postman"
+          },
+          {
+            "id": "tools-item6",
+            "toolsImg": "toolsImg6",
+            "paragraph": "Webpack"
+          },
+          {
+            "id": "tools-item7",
+            "toolsImg": "toolsImg7",
+            "paragraph": "Gulp"
+          },
+          {
+            "id": "tools-item8",
+            "toolsImg": "toolsImg8",
+            "paragraph": "VSCode"
+          }
+        ]
+      }
+    },
+    "worksSection": {
+      "header": "Works",
+      "worksItems": [
+        {
+          "worksItemTitle": "Omega Stream",
+          "worksItemParagraph": "Omega Stream is advanced serverless Video on demand VOD platform.",
+          "toolsLeft": [
+            {
+              "id": "tool1",
+              "name": "React",
+              "imageName": "reactImg"
+            },
+            {
+              "id": "tool2",
+              "name": "Next",
+              "imageName": "nextImg"
+            },
+            {
+              "id": "tool3",
+              "name": "Redux",
+              "imageName": "reduxImg"
+            },
+            {
+              "id": "tool4",
+              "name": "SASS",
+              "imageName": "sassImg"
+            }
+          ],
+          "websiteTitle": "omegastream",
+          "githubSrc": "https://github.com/ENGAhmedAbdelfattah/OmegaByNext",
+          "websiteSrc": "https://omega-by-next.vercel.app/en"
+        },
+        {
+          "worksItemTitle": "Al-Qima",
+          "worksItemParagraph": "Al-Qima is the educational platform that lets you learn everything on one platform.",
+          "toolsLeft": [
+            {
+              "id": "tool1",
+              "name": "React",
+              "imageName": "reactImg"
+            },
+            {
+              "id": "tool2",
+              "name": "Redux",
+              "imageName": "reduxImg"
+            },
+            {
+              "id": "tool3",
+              "name": "JavaScript",
+              "imageName": "javascriptImg"
+            },
+            {
+              "id": "tool4",
+              "name": "SASS",
+              "imageName": "sassImg"
+            }
+          ],
+          "websiteTitle": "alqima",
+          "githubSrc": "https://github.com/ENGAhmedAbdelfattah/ALQIMA",
+          "websiteSrc": "https://zesty-centaur-442f0c.netlify.app/Home"
+        },
+        {
+          "worksItemTitle": "MyStore",
+          "worksItemParagraph": "MyStore is a captivating online emporium, redefining shopping through a meticulously curated selection and seamless digital experience.",
+          "toolsLeft": [
+            {
+              "id": "tool1",
+              "name": "Angular",
+              "imageName": "angularImg"
+            },
+            {
+              "id": "tool2",
+              "name": "TypeScript",
+              "imageName": "typescriptImg"
+            },
+            {
+              "id": "tool3",
+              "name": "css",
+              "imageName": "cssImg"
+            }
+          ],
+          "websiteTitle": "mystore",
+          "githubSrc": "https://github.com/ENGAhmedAbdelfattah/myStore",
+          "websiteSrc": "https://engahmedabdelfattah.github.io/myStore"
+        },
+        {
+          "worksItemTitle": "El-Zero template",
+          "worksItemParagraph": "El-Zero portfolio template embodies simplicity, elegance, and versatility for showcasing your work.",
+          "toolsLeft": [
+            {
+              "id": "tool1",
+              "name": "PUG",
+              "imageName": "pugImg"
+            },
+            {
+              "id": "tool2",
+              "name": "SASS",
+              "imageName": "sassImg"
+            },
+            {
+              "id": "tool3",
+              "name": "JavaScript",
+              "imageName": "javascriptImg"
+            }
+          ],
+          "websiteTitle": "elzerotemplate",
+          "githubSrc": "https://github.com/ENGAhmedAbdelfattah/zero-template-V2.0",
+          "websiteSrc": "https://engahmedabdelfattah.github.io/zero-template-V2.0/"
+        },
+        {
+          "worksItemTitle": "One master",
+          "worksItemParagraph": "One Master is a dynamic and all-encompassing template, tailored to showcase your diverse body of work with style and finesse.",
+          "toolsLeft": [
+            {
+              "id": "tool1",
+              "name": "HTML",
+              "imageName": "htmlImg"
+            },
+            {
+              "id": "tool2",
+              "name": "Bootstrap",
+              "imageName": "bootstrapImg"
+            },
+            {
+              "id": "tool3",
+              "name": "JavaScript",
+              "imageName": "javascriptImg"
+            }
+          ],
+          "websiteTitle": "onemaster",
+          "githubSrc": "https://github.com/ENGAhmedAbdelfattah/Design_One-master",
+          "websiteSrc": "https://engahmedabdelfattah.github.io/Design_One-master"
+        }
+      ],
+      "worksItemBuilt": "Built With",
+      "toolsRight": [
+        {
+          "id": "tool1",
+          "name": "GitHub",
+          "imageName": "codeImg"
+        },
+        {
+          "id": "tool2",
+          "name": "live",
+          "imageName": "liveImg"
+        }
+      ]
+    }
+  }
+}

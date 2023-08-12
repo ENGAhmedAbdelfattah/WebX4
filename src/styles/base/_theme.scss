@@ -4,5 +4,5 @@ body {
 }
 .dark body {
   color: #fff;
-  background-color: #000;
+  background-color: var(--background-color, #000);
 }

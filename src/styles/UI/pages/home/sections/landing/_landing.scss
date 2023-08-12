@@ -1,213 +1,146 @@
-@use "./../../../../../common/variable" as v;
-
-section.homeLanding {
-  position: relative;
-  z-index: 10;
+// @use "./../../../../../helpers/variable" as v;
+section.landing {
+  // height: calc(100dvh - 80px);
+  @media (min-width: 767.98px) and (max-width: 991.98px) {
+    height: auto;
+  }
   overflow: hidden;
-  div.container-wrapped {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 161px;
-    margin: auto;
-    @media (max-width: 767.98px) {
-      min-height: calc(100vh - 70px);
+  div.container {
+    display: flex;
+    // align-items: center;
+    // height: calc(100dvh - 80px);
+    min-height: 508px; //722 in mobile
+    flex-shrink: 0;
+    @media (max-width: 576px){
+      min-height: 740px;
     }
-    div.container {
-      margin-top: v.$margin_page_top;
-      margin-bottom: 33px;
-      @media (max-width: 767.98px) {
-        margin-top: 41px;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+    }
+    gap: 50px;
+    @media (max-width: 991.98px) {
+      gap: 0;
+    }
+    div.landing-left {
+      margin-top: 97px;
+      @media (max-width: 991.98px) {
+        margin-top: 27px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+      }
+      span.hi {
+        font-size: 24px;
+        font-weight: bold;
+        // color: #6D716B;
+        color: var(--second_color);
       }
       h1.landing-header {
-        margin-bottom: 26px;
-        color: v.$header_color;
-        font-size: 47px;
-        font-weight: 800;
-        padding: 0 27px;
-        line-height: 1.3;
-        word-spacing: -2px;
-        height: 126px;
-        max-width: 700px;
-        animation: italic-normal 0.3s 0.4s linear alternate both;
+        font-size: 71px;
+        // color: #747474;
+        color: var(--main_color_Two);
+        font-weight: 900;
+        white-space: nowrap;
+        line-height: 1;
+        margin-top: 15px;
         @media (max-width: 767.98px) {
-          font-size: 31px;
-          height: 154px;
-          padding: 0;
-        }
-        @media (min-width: 767.98px) and (max-width: 991.98px) {
-          height: 135px;
+          font-size: 36px;
         }
         @at-root html[dir="rtl"]
-            section.homeLanding
+            section.landing
             div.container
+            div.landing-left
             h1.landing-header {
-          font-size: 42px;
-          height: 155px;
           @media (max-width: 767.98px) {
-            font-size: 25px;
-            height: 90px;
-          }
-        }
-        span {
-          display: inline-block;
-          margin-left: -8px;
-          margin-right: 16px;
-          position: relative;
-          @media (max-width: 767.98px) {
-            margin: 0px;
-          }
-          @at-root html[dir="rtl"]
-              section.homeLanding
-              div.container
-              h1.landing-header
-              span {
-            margin-left: 16px !important;
-            margin-right: -8px !important;
-          }
-          &::before {
-            content: "";
-            // width: 100%;
-            padding: 0 29px;
-            height: 60px;
-            position: absolute;
-            left: -29px;
-            bottom: 11px;
-            z-index: -1;
-            background-color: v.$landing_cta_color;
-            border-radius: 29px;
-            transform: skew(4deg) rotate(-5deg);
-            // width: 0%;
-            animation: width-load 0.4s ease-out 0.2s both;
-            @media (max-width: 767.98px) {
-              display: none;
-              // padding: 0px 16px;
-              // height: 43px;
-              // left: -18px;
-              // bottom: 4px;
-            }
+            font-size: 43px;
           }
         }
       }
 
-      div.landing-btns {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 30px;
-        padding: 0 36px;
-        margin-top: 30px;
+      p.landing-subheader {
+        font-size: 40px;
+        // color: #4B4B4B;
+        color: var(--second_color);
+        font-weight: 900;
         @media (max-width: 767.98px) {
-          flex-direction: column;
+          font-size: 30px;
         }
-        button,
-        a {
-          color: v.$white_color;
-          font-size: 17px;
-          border-radius: 12px;
-        }
-        button {
-          border: none;
-          outline: none;
-        }
-        a {
-          text-decoration: none;
-        }
-        button.btn-start {
-          background-color: v.$main_color;
-          padding: 15px 55px;
-          font-weight: 700;
+        @at-root html[dir="rtl"]
+            section.landing
+            div.container
+            div.landing-left
+            p.landing-subheader {
           @media (max-width: 767.98px) {
-            min-width: 219px;
+            font-size: 36px;
           }
         }
+      }
 
-        a.btn-docs {
-          background-color: #f3f3f3;
-          font-weight: 700;
-          color: #1d3c51;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 11px;
-          padding: 13px 30px;
-          @media (max-width: 767.98px) {
-            min-width: 219px;
-          }
-          i {
-            transform: scaleX(-1);
-          }
+      p.landing-paragraph {
+        // color: #878787;
+        color: var(--paragraph_color);
+        font-weight: 500;
+        max-width: 547px;
+        margin-top: 3px;
+      }
 
-          i {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            border: 2px solid #1d3c51;
-            color: #1d3c51;
-            padding: 3px;
-            width: 25px;
-            height: 25px;
-            @at-root html[dir="rtl"]
-                section.homeLanding
-                div.landing-btns
-                button.btn-docs {
-              i {
-                transform: scaleX(-1);
-              }
-            }
-          }
+      button.header-btn {
+        border-radius: 6px;
+        // background-color: #4C4C4C;
+        background-color: var(--main-btn-color);
+        color: #dee3d4;
+        padding: 12px 32px;
+        margin-top: 30px;
+        @media (max-width: 991.98px) {
+          margin-right: auto;
+          margin-left: auto;
         }
       }
     }
-    div.hand-img {
-      width: 568px;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-      margin-bottom: -11px;
-      animation: show 4.5s 0s infinite alternate;
-      &.one {
-        opacity: 20%;
-        width: 465px;
-        animation: showup 2s 0s infinite alternate;
-        @media (max-width: 767.98px) {
-          width: 400px;
-        }
+
+    div.landing-right {
+      margin-top: 58px;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      @media (max-width: 991.98px) {
+        margin-top: 36px;
       }
-      &.two {
-        opacity: 80%;
-        width: 465px;
-        transform: translateX(86px);
-        animation: showup 2s 2s infinite alternate;
-        @media (max-width: 767.98px) {
-          width: 400px;
-          transform: translateX(73px);
+      div.image-hand {
+        clip-path: polygon(
+          30% 0%,
+          70% 0%,
+          100% 30%,
+          100% 70%,
+          70% 100%,
+          30% 100%,
+          0% 70%,
+          0% 30%
+        );
+        // background-color: #eee;
+        background-color:  var(--bg-main-color-two);
+        overflow: hidden;
+        height: 450px;
+        @media (max-width: 991.98px) {
+          height: 353px;
+          width: 275px;
         }
-        @at-root html[dir="rtl"]
-            section.homeLanding
-            div.container-wrapped
-            div.hand-img.two {
-          transform: translateX(-86px) scaleX(-1);
+        img.my-image {
+          position: relative;
           @media (max-width: 767.98px) {
-            transform: translateX(-74px) scaleX(-1);
+            left: -15px;
+          }
+          @at-root html[dir="rtl"]
+              section.landing
+              div.container
+              div.landing-right
+              div.image-hand
+              img.my-image {
+            @media (max-width: 767.98px) {
+              right: -11px;
+            }
           }
         }
-      }
-      @media (max-width: 767.98px) {
-        width: 375px;
-      }
-      @media (min-width: 767.98px) and (max-width: 991.98px) {
-        width: 359px;
-      }
-      @at-root html[dir="rtl"] section.homeLanding .hand-img {
-        right: auto !important;
-        left: 0;
-        transform: scaleX(-1);
-      }
-      img {
-        width: 100%;
-        height: 100%;
       }
     }
   }

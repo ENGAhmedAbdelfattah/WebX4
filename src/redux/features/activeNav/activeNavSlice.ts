@@ -1,13 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
-type CounterState = {
+type activeNav = {
   active: string;
 };
 
 const initialState = {
   active: "",
-} as CounterState;
+} as activeNav;
 
 export const activeNav = createSlice({
   name: "activeNav",

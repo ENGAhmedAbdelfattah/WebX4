@@ -1,8 +1,0 @@
-@use "./../../config-directions/direction-rtl" as *;
-
-// overWrite properties with config-direction only and remove other properties (best for size of file which compiled)
-
-@mixin rtl {
-  .contact-us {
-  }
-}

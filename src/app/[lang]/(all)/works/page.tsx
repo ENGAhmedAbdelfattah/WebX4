@@ -4,4 +4,4 @@ function works() {
   )
 }
 
-export default works
+export default works;

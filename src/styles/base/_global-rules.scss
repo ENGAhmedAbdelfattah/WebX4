@@ -1,4 +1,4 @@
-@use "./../helpers/variable" as v;
+// @use "./../helpers/variable" as v;
 
 * {
   -webkit-box-sizing: border-box;
@@ -21,7 +21,7 @@ body {
   // @at-root html[dir="rtl"] body {
   // font-family: "Tajawal", sans-serif; //next generate it
   // }
-  caret-color: v.$main_color;
+  caret-color: var(--main_color);
 }
 
 .container {
@@ -53,6 +53,10 @@ body {
   }
 }
 
+
+.marvel-device.iphone-x iframe::-webkit-scrollbar {
+  display: none;
+}  
 // .container-wrapped {
 //   padding: 0 15px;
 //   margin: 0 auto;

@@ -10,17 +10,12 @@
       {
         "id": "link-2",
         "name": "المهارات",
-        "path": "/skills"
+        "path": "#skills"
       },
       {
         "id": "link-3",
         "name": "الأعمال",
-        "path": "/works"
-      },
-      {
-        "id": "",
-        "name": "تواصل معنا",
-        "path": "/contact"
+        "path": "#works"
       }
     ]
   }

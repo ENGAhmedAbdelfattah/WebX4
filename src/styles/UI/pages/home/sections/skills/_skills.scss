@@ -1,0 +1,56 @@
+@use "./../../../../../helpers/variable" as v;
+@forward "./units/categoryItem";
+@forward "./units/_skillsItems.scss";
+
+section.skills {
+  margin-top: 10px;
+  div.container {
+    div.skills-bottom {
+      display: flex;
+      gap: 3px;
+      // margin-top: 38px;
+      margin-top: 12px;
+      @media (max-width: 991.98px) {
+        flex-direction: column;
+      }
+      div.skills-left {
+        padding: 26px;
+        width: 212px;
+        background-color: var(--bg-main-color-two);
+        border-start-start-radius: 8px;
+        border-end-start-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        @media (max-width: 767.98px) {
+          justify-content: center;
+        }
+        @media (max-width: 991.98px) {
+          flex-direction: row;
+          align-items: start;
+          justify-content: space-around;
+          gap: 19px;
+          width: 100%;
+        }
+        // categoryitem {
+
+        // }
+      }
+
+      div.skills-right {
+        display: flex;
+        flex: 1;
+        padding: 26px;
+        background-color: var(--bg-main-color-two);
+        border-start-end-radius: 8px;
+        border-end-start-radius: 8px;
+        max-height: 874px;
+        overflow: auto;
+        div.skills-items {
+          flex: 1;
+        }
+      }
+    }
+  }
+}

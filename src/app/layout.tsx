@@ -5,11 +5,10 @@ import { Roboto } from "next/font/google";
 import { Tajawal } from "next/font/google";
 
 import Providers from "@/components/providers/Providers";
-import { getTranslate } from "@/utils/getTranslate";
 import Image from "next/image";
 import testPageImg from "@/../public/test-image/light/1-home-about-light.png";
-import Footer from "@/components/UI/layout/footer/Footer";
-import Header from './../components/UI/layout/header/Header';
+import Footer from "@/components/UI/footer/Footer";
+import Header from './../components/UI/header/Header';
 import getPath from "@/utils/getPath";
 
 const roboto = Roboto({
@@ -34,10 +33,10 @@ type props = {
   children: React.ReactNode;
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: props) {
-  const {pathname, lang, dir} = getPath();
+  const {lang, dir} = getPath();
   const fontClass = lang === "ar" ? tajawal.className : roboto.className;
   return (
     <html lang={lang} dir={dir}>
@@ -51,7 +50,7 @@ export default async function RootLayout({
         <Providers>
           <Header />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </Providers>
       </body>
     </html>

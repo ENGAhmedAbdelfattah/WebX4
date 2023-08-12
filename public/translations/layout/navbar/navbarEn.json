@@ -10,17 +10,12 @@
       {
         "id": "link-2",
         "name": "skills",
-        "path": "/skills"
+        "path": "#skills"
       },
       {
         "id": "link-3",
         "name": "Works",
-        "path": "/works"
-      },
-      {
-        "id": "",
-        "name": "Contact",
-        "path": "/contact"
+        "path": "#works"
       }
     ]
   }
