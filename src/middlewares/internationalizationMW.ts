@@ -4,6 +4,11 @@ import {
   type NextMiddleware,
 } from "next/server";
 import getLocale, { locales } from "@/utils/getLocale";
+import { langPath } from "@/types/custom";
+
+// interface AppNextRequest extends NextRequest {
+//   langPath: langPath;
+// }
 
 export function internationalizationMiddleware(middleware: NextMiddleware) {
   return async (req: NextRequest, event: NextFetchEvent) => {
