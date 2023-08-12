@@ -1,10 +1,12 @@
-import { NextResponse } from 'next/server'
-import type { NextMiddleware } from 'next/server'
-
+import { AppNextRequest } from '@/types/middleware';
+import { NextMiddlewareResult } from 'next/dist/server/web/types';
+import { NextFetchEvent, NextResponse } from 'next/server'
+// import type { NextMiddleware } from 'next/server'
+export type NextMiddleware = (request: AppNextRequest, event: NextFetchEvent) => NextMiddlewareResult | Promise<NextMiddlewareResult>;
 type MiddlewareFactory = (middleware: NextMiddleware) => NextMiddleware
 
 export function chain(
-  functions: MiddlewareFactory[],
+  functions: any,
   index = 0,
 ): NextMiddleware {
   const current = functions[index];
