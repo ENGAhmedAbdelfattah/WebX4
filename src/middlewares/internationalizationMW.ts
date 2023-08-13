@@ -4,11 +4,9 @@ import {
   type NextMiddleware,
 } from "next/server";
 import getLocale, { locales } from "@/utils/getLocale";
-import { langPath } from "@/types/custom";
-import { AppNextRequest } from "@/types/middleware";
 
 export function internationalizationMiddleware(middleware: NextMiddleware) {
-  return async (req: any, event: NextFetchEvent) => {
+  return async (req: NextRequest, event: NextFetchEvent) => {
     const pathname = req.nextUrl.pathname;
     const pathnameIsMissingLocale = locales.every(
       (locale) =>
