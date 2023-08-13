@@ -10,9 +10,8 @@ type props = {
 
 export default async function Home({ params: { lang } }: props) {
   const direc = await getTranslate(lang, "home");
-  const dir = lang === "ar" ? "rtl" : "ltr";
   return (
-    <main lang={lang} dir={dir}>
+    <main>
       <Landing lang={lang} t={direc.home.landing}/>
       <Skills lang={lang} t={direc.home.skills}/>
       <WorksSection lang={lang} t={direc.home.worksSection}/>
