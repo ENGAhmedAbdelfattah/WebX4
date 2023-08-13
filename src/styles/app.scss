@@ -16,7 +16,7 @@ $second_color-light: #374c86;
 $paragraph_color-light: #586177;
 $bg-main-color-light: #ccdce9b6;
 $bg-main-color-two-light: #ccdce978;
-$skill-header: #374C86;
+$skill-header: #374c86;
 $main-btn-color: #001653;
 $hr-color: #ddd;
 $header-border-color: #eeeeee;
@@ -29,9 +29,9 @@ $bg-main-color-two: #ccdce978;
 $main-color-dark: #91d5ff;
 $background-color-dark: #161819;
 $main_color_Two-dark: #ede8e0;
-$second_color-dark: #9FC3EE;
+$second_color-dark: #9fc3ee;
 // #d9e0e8
-$paragraph_color-dark: #E1EBF7;
+$paragraph_color-dark: #e1ebf7;
 $skill-header-dark: #9fc3ee;
 $main-btn-color-dark: $main-btn-color;
 $hr-color-dark: #313638;
@@ -41,20 +41,27 @@ $bg-main-color-dark: #ccdce9b6;
 $bg-main-color-two-dark: #232627;
 
 :root {
-    --main_color: #{$main-color-light};
-    --background-color: #{$background-color-light};
-    --main_color_Two: #{$main_color_Two-light};
-    --second_color: #{$second_color-light};
-    --paragraph_color: #{$paragraph_color-light};
-    --skill-header: #{$skill-header};
-    --main-btn-color: #{$main-btn-color};
-    --hr-color: #{$hr-color};
-    --header-border-color: #{$header-border-color};
-    --header_section_bg: #{$header_section_bg}
-    --bg-main-color: #{$bg-main-color};
-    --bg-main-color-two: #{$bg-main-color-two};
+  --main_color: #{$main-color-light};
+  --background-color: #{$background-color-light};
+  --main_color_Two: #{$main_color_Two-light};
+  --second_color: #{$second_color-light};
+  --paragraph_color: #{$paragraph_color-light};
+  --skill-header: #{$skill-header};
+  --main-btn-color: #{$main-btn-color};
+  --hr-color: #{$hr-color};
+  --header-border-color: #{$header-border-color};
+  --header_section_bg: #{$header_section_bg};
+  --bg-main-color: #{$bg-main-color};
+  --bg-main-color-two: #{$bg-main-color-two};
 }
+
 html {
+  &[lang="ar"] {
+    direction: rtl;
+  }
+  &[lang="en"] {
+    direction: ltr;
+  }
   &.dark {
     body {
       --main_color: #{$main-color-dark};
@@ -71,9 +78,6 @@ html {
       --header_section_bg: #{$header_section_bg-dark};
       --bg-main-color: #{$bg-main-color-dark};
       --bg-main-color-two: #{$bg-main-color-two-dark};
-
-
-
     }
   }
 
@@ -81,7 +85,6 @@ html {
   background-color: var(--background-color);
   transition: color 0.3s, background-color 0.3s;
 }
-
 
 body {
   background-color: transparent;
