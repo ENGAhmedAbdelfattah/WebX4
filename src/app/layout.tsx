@@ -38,8 +38,8 @@ export default function RootLayout({
 }: props) {
   const {lang, dir} = getPath();
   const fontClass = lang === "ar" ? tajawal.className : roboto.className;
-  return (
-    <html lang={lang} dir={dir}>
+    return (
+    <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
       <body className={fontClass}>
         <Image
           src={testPageImg}
