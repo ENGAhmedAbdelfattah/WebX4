@@ -21,19 +21,19 @@ function NavLinks({ lang, t }: props) {
 
   const handleClick = () => {
     dispatch(toggleActive());
-  }
+  };
   return (
     <ul className={`link-list ${activeState.active}`}>
       {t.navbar.navList.map((el: any) => (
         <li key={el.id} onClick={() => dispatch(toggleActive())}>
-          <Link
+          <a
             href={getLinkWithLang(lang, el.path)}
             className={`link ${
               getLinkWithLang(lang, el.path) === pathname ? "active" : ""
             }`}
           >
             {el.name}
-          </Link>
+          </a>
         </li>
       ))}
       <li>
