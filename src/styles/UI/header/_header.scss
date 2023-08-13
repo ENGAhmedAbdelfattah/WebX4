@@ -69,7 +69,7 @@ header {
             width: 100%;
             text-align: center;
           }
-          a.link {
+          a.link, button.link {
             transition: 0.3s;
             color: var(--main_color_Two);
             &:hover {
