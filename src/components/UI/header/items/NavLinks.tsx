@@ -37,11 +37,11 @@ function NavLinks({ lang, t }: props) {
         </li>
       ))}
       <li>
-        {/* <LangSwitcherClient
+        <LangSwitcherClient
           lang={lang}
           langText={t.navbar.lang}
           onHandelClick={handleClick}
-        /> */}
+        />
       </li>
     </ul>
   );

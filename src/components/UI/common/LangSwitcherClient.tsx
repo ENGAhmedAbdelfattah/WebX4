@@ -1,11 +1,12 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { lang } from "@/types/lang";
+import Link from "next/link";
 
 type props = {
   lang: lang;
   langText: string;
-  onHandelClick: () => void
+  onHandelClick: () => void;
 };
 
 function LangSwitcherClient({ lang, langText, onHandelClick }: props) {
@@ -17,18 +18,18 @@ function LangSwitcherClient({ lang, langText, onHandelClick }: props) {
     : "/"; // /contactus
   return (
     <>
-        <a
-          href={
-            pathname.startsWith("/en")
-              ? `/ar/${purePath}`
-              : pathname.startsWith("/ar")
-              ? `/en/${purePath}`
-              : `${purePath}`
-          }
-          onClick = {onHandelClick} 
-        >
-          {langText}
-        </a>
+      <Link
+        href={
+          pathname.startsWith("/en")
+            ? `/ar/${purePath}`
+            : pathname.startsWith("/ar")
+            ? `/en/${purePath}`
+            : `${purePath}`
+        }
+        onClick={onHandelClick}
+      >
+        {langText}
+      </Link>
     </>
   );
 }
