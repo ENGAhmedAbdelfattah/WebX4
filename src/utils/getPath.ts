@@ -10,7 +10,7 @@ function getPath() {
     ? pathname.split("/ar")[1]
     : "/";
   const lang: lang = pathname.startsWith("/ar") ? "ar" : "en";
-  // const dir = lang === "ar" ? "rtl" : "ltr";
+  const dir = lang === "ar" ? "rtl" : "ltr";
   return { pathname, purePath, lang, dir };
 }
 
