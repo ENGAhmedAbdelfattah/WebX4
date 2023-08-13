@@ -1,9 +1,9 @@
 import { lang } from "@/types/lang";
 import { headers } from "next/headers";
 
-function getPath() {
-  const headersList = headers();
-  const pathname = headersList.get("x-invoke-path") || "";
+async function getPath() {
+  const headersList =  await headers();
+  const pathname = await headersList.get("x-invoke-path") || "";
   const purePath = pathname.startsWith("/en")
     ? pathname.split("/en")[1]
     : pathname.startsWith("/ar")
