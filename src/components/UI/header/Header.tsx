@@ -9,9 +9,14 @@ import NavLinks from "./items/NavLinks";
 import { getTranslate } from "@/utils/getTranslate";
 import MenuIcon from "./items/MenuIcon";
 import { navbar } from "@/types/translations";
+import { lang } from "@/types/lang";
 
-async function Header() {
-  const { lang } = getPath();
+type props = {
+  lang: lang;
+}
+
+async function Header({lang}: props) {
+  // const { lang } = getPath();
   const t: navbar = await getTranslate(lang, "navbar");
 
 

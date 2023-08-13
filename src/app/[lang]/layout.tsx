@@ -52,9 +52,9 @@ export default function RootLayout({children, params}: props) {
           loading="eager"
         />
         <Providers>
-          <Header />
+          <Header lang={lang}/>
           {children}
-          <Footer />
+          <Footer lang={lang}/>
         </Providers>
       </body>
     </html>

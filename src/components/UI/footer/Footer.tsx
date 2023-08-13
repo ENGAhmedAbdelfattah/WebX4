@@ -1,8 +1,13 @@
+import { lang } from "@/types/lang";
 import getPath from "@/utils/getPath";
 import { getTranslate } from "@/utils/getTranslate";
 
-async function Footer() {
-  const { lang } = getPath();
+type props = {
+  lang: lang;
+}
+
+async function Footer({lang}: props) {
+  // const { lang } = getPath();
   const direc: any = await getTranslate(lang, "footer");
   const t = direc.footer;
   return (
