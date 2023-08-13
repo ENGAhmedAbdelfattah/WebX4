@@ -14,32 +14,54 @@ function ThemeSwitcher({ name }: props) {
 
   useEffect(() => {
     setMounted(true);
+    setTheme(systemTheme);
     setFinishFirstEffect(true);
   }, []);
   useEffect(() => {
     if (finishFirstEffect) setTheme(theme || systemTheme);
-  }, [finishFirstEffect]);
+  }, [finishFirstEffect, theme, systemTheme, setTheme]);
 
   if (!mounted) {
     return null;
   }
+
+  let iconTheme = <BsSun size={25} cursor="pointer" className={name} onClick={() => setTheme("light")}/>;
+  if(theme) {
+    iconTheme = theme === "dark" ? (
+      <BsSun
+        size={25}
+        cursor="pointer"
+        className={name}
+        onClick={() => setTheme("light")}
+      />
+    ) : (
+      <FiMoon
+        size={25}
+        cursor="pointer"
+        className={name}
+        onClick={() => setTheme("dark")}
+      />
+    )
+  }else {
+    iconTheme = systemTheme === "dark" ? (
+      <BsSun
+        size={25}
+        cursor="pointer"
+        className={name}
+        onClick={() => setTheme("light")}
+      />
+    ) : (
+      <FiMoon
+        size={25}
+        cursor="pointer"
+        className={name}
+        onClick={() => setTheme("dark")}
+      />
+    );
+  }
   return (
     <>
-      {theme === "dark" ? (
-        <BsSun
-          size={25}
-          cursor="pointer"
-          className={name}
-          onClick={() => setTheme("light")}
-        />
-      ) : (
-        <FiMoon
-          size={25}
-          cursor="pointer"
-          className={name}
-          onClick={() => setTheme("dark")}
-        />
-      )}
+      {iconTheme}
     </>
   );
 }
