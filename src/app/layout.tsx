@@ -33,10 +33,10 @@ type props = {
   children: React.ReactNode;
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: props) {
-  const {lang, dir} = await getPath();
+  const {lang, dir} = getPath();
   const fontClass = lang === "ar" ? tajawal.className : roboto.className;
     return (
     <html lang={lang} dir={dir}>
