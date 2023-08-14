@@ -11,7 +11,8 @@ const store = configureStore({
     apiData: apiDataReducer,
     dataAuth: dataAuthReducer,
   },
-  devTools: process.env.NODE_ENV === "development",
+  devTools: false,
+  // devTools: process.env.NODE_ENV === "development",
 });
 // console.log(process.env.NODE_ENV)
 export type RootState = ReturnType<typeof store.getState>;
