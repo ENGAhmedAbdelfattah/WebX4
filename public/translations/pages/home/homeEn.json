@@ -175,6 +175,45 @@
       "header": "Works",
       "worksItems": [
         {
+          "worksItemTitle": "Happy shop",
+          "worksItemParagraph": "Happy shop is an online retail e-commerce to enhance customer experience and drive sales.",
+          "toolsLeft": [
+            {
+              "id": "tool1",
+              "name": "React",
+              "imageName": "reactImg"
+            },
+            {
+              "id": "tool2",
+              "name": "Redux",
+              "imageName": "reduxImg"
+            },
+            {
+              "id": "tool3",
+              "name": "Bootstrap",
+              "imageName": "bootstrapImg"
+            },
+            {
+              "id": "tool4",
+              "name": "Node",
+              "imageName": "nodeImg"
+            },
+            {
+              "id": "tool5",
+              "name": "Express",
+              "imageName": "expressImg"
+            },
+            {
+              "id": "tool6",
+              "name": "MongoDB",
+              "imageName": "mongodbImg"
+            }
+          ],
+          "websiteTitle": "Happy shop",
+          "githubSrc": "https://github.com/ENGAhmedAbdelfattah/react-ecommirce-v1",
+          "websiteSrc": "https://main--legendary-starburst-4912f1.netlify.app"
+        },
+        {
           "worksItemTitle": "Omega Stream",
           "worksItemParagraph": "Omega Stream is advanced serverless Video on demand VOD platform.",
           "toolsLeft": [

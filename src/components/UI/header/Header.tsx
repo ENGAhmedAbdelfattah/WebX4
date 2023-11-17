@@ -13,12 +13,11 @@ import { lang } from "@/types/lang";
 
 type props = {
   lang: lang;
-}
+};
 
-async function Header({lang}: props) {
+async function Header({ lang }: props) {
   // const { lang } = getPath();
   const t: navbar = await getTranslate(lang, "navbar");
-
 
   return (
     <header>
@@ -35,13 +34,17 @@ async function Header({lang}: props) {
           <div className="theme-hand">
             <ThemeSwitcher name={"theme-icon"} />
           </div>
-          {/* <div className="resume">
-            <Link href={getLinkWithLang(lang, "/resume")} className="link">
+          <div className="resume">
+            <Link
+              href="https://drive.google.com/file/d/1FMfiMzh_fnhFmcOTDYx1fIkfOfQTRbFG/view?usp=sharing"
+              target="_blank"
+              className="link"
+            >
               <FaFileInvoice className="file-icon" />
               <span className="span-resume">Resume</span>
             </Link>
-          </div> */}
-        <MenuIcon/>
+          </div>
+          <MenuIcon />
         </div>
       </div>
     </header>

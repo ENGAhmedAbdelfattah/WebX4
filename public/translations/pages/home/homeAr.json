@@ -170,6 +170,45 @@
       "header": "أعمالي",
       "worksItems": [
         {
+          "worksItemTitle": "هابي شوب",
+          "worksItemParagraph": "هابي شوب عبارة عن منصة تسوق للبيع بالتجزئة عبر الإنترنت لتعزيز تجربة العملاء وزيادة المبيعات.",
+          "toolsLeft": [
+            {
+              "id": "tool1",
+              "name": "React",
+              "imageName": "reactImg"
+            },
+            {
+              "id": "tool2",
+              "name": "Redux",
+              "imageName": "reduxImg"
+            },
+            {
+              "id": "tool3",
+              "name": "Bootstrap",
+              "imageName": "bootstrapImg"
+            },
+            {
+              "id": "tool4",
+              "name": "Node",
+              "imageName": "nodeImg"
+            },
+            {
+              "id": "tool5",
+              "name": "Express",
+              "imageName": "expressImg"
+            },
+            {
+              "id": "tool6",
+              "name": "MongoDB",
+              "imageName": "mongodbImg"
+            }
+          ],
+          "websiteTitle": "هابي شوب",
+          "githubSrc": "https://github.com/ENGAhmedAbdelfattah/react-ecommirce-v1",
+          "websiteSrc": "https://main--legendary-starburst-4912f1.netlify.app"
+        },
+        {
           "worksItemTitle": "أوميجا استريم",
           "worksItemParagraph": "أوميجا استريم هي منصة متقدمة لبث الفيديو عند الطلب بدون خادم.",
           "toolsLeft": [

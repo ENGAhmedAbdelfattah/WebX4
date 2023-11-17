@@ -76,17 +76,17 @@ const dataAuthSlice = createSlice({
     /*=============================================
     =                 signInUser                 =
     =============================================*/
-    [signInUser.pending.type]: (state) => {
+    [`${signInUser.pending}`]: (state) => {
       state.loading = true;
     },
-    [signInUser.fulfilled.type]: (state, action: PayloadAction<any>) => {
+    [`${signInUser.fulfilled}`]: (state, action: PayloadAction<any>) => {
       state.loading = false;
       state.dataAuth = action.payload;
       state.token = action.payload.token;
       state.error = "";
       state.token ? localStorage.setItem("token", state.token) : "";
     },
-    [signInUser.rejected.type]: (state, action: PayloadAction<any>) => {
+    [`${signInUser.rejected}`]: (state, action: PayloadAction<any>) => {
       state.loading = false;
       state.dataAuth = [];
       state.error = action.payload.error.message;
@@ -97,15 +97,15 @@ const dataAuthSlice = createSlice({
     =                signUpUser                  =
     =============================================*/
     // [signUpUser.pending as unknown as string]
-    [signUpUser.pending.type]: (state) => {
+    [`${signUpUser.pending}`]: (state) => {
       state.loading = true;
     },
-    [signUpUser.fulfilled.type]: (state, action: PayloadAction<any>) => {
+    [`${signUpUser.fulfilled}`]: (state, action: PayloadAction<any>) => {
       state.loading = false;
       state.dataAuth = action.payload;
       state.error = "";
     },
-    [signUpUser.rejected.type]: (state, action: PayloadAction<any>) => {
+    [`${signUpUser.rejected}`]: (state, action: PayloadAction<any>) => {
       state.loading = false;
       state.dataAuth = [];
       state.error = action.payload.error.message;

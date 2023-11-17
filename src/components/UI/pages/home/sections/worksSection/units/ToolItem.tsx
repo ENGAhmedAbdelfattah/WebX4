@@ -11,6 +11,9 @@ import cssImg from "@/../public/icons/skills/frontend/frontend2.svg"
 import pugImg from "@/../public/icons/skills/frontend/frontend11.svg"
 import htmlImg from "@/../public/icons/skills/frontend/frontend1.svg"
 import bootstrapImg from "@/../public/icons/skills/frontend/frontend6.svg"
+import nodeImg from "@/../public/icons/skills/backend/backend1.svg"
+import expressImg from "@/../public/icons/skills/backend/backend2.svg"
+import mongodbImg from "@/../public/icons/skills/backend/backend3.svg"
 import githubImg from "@/../public/icons/skills/tools/tools2.svg"
 import liveImg from "@/../public/icons/livelinks/live.svg"
 import codeImg from "@/../public/icons/livelinks/code.svg"
@@ -37,7 +40,10 @@ function ToolItem({nEl} :props) {
     bootstrapImg,
     githubImg,
     liveImg,
-    codeImg
+    codeImg,
+    nodeImg,
+    expressImg,
+    mongodbImg
   }
   return (
     <div className="tool-work-item" title={nEl.name}>
