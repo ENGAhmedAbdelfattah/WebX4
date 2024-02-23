@@ -170,6 +170,39 @@
       "header": "أعمالي",
       "worksItems": [
         {
+          "worksItemTitle": "Physics Nerds",
+          "worksItemParagraph": "Physics Nerds هي منصة تعليمية لكل ما يتعلق بالفيزياء ، بما في ذلك المحاضرات ومقاطع الفيديو.",
+          "toolsLeft": [
+            {
+              "id": "tool1",
+              "name": "Next",
+              "imageName": "nextImg"
+            },
+            {
+              "id": "tool2",
+              "name": "React",
+              "imageName": "reactImg"
+            },
+            {
+              "id": "tool3",
+              "name": "Redux",
+              "imageName": "reduxImg"
+            },
+            {
+              "id": "tool4",
+              "name": "Node",
+              "imageName": "nodeImg"
+            },
+            {
+              "id": "tool5",
+              "name": "Express",
+              "imageName": "expressImg"
+            }
+          ],
+          "websiteTitle": "Physics Nerds",
+          "websiteSrc": "https://physics-nerds.com"
+        },
+        {
           "worksItemTitle": "هابي شوب",
           "worksItemParagraph": "هابي شوب عبارة عن منصة تسوق للبيع بالتجزئة عبر الإنترنت لتعزيز تجربة العملاء وزيادة المبيعات.",
           "toolsLeft": [
