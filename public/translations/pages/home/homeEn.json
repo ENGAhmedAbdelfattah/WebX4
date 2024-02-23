@@ -175,6 +175,39 @@
       "header": "Works",
       "worksItems": [
         {
+          "worksItemTitle": "Physics Nerds",
+          "worksItemParagraph": "Physics Nerds is an educational platform for everything related to physics, including lectures and videos.",
+          "toolsLeft": [
+            {
+              "id": "tool1",
+              "name": "Next",
+              "imageName": "nextImg"
+            },
+            {
+              "id": "tool2",
+              "name": "React",
+              "imageName": "reactImg"
+            },
+            {
+              "id": "tool3",
+              "name": "Redux",
+              "imageName": "reduxImg"
+            },
+            {
+              "id": "tool4",
+              "name": "Node",
+              "imageName": "nodeImg"
+            },
+            {
+              "id": "tool5",
+              "name": "Express",
+              "imageName": "expressImg"
+            }
+          ],
+          "websiteTitle": "Physics Nerds",
+          "websiteSrc": "https://physics-nerds.com"
+        },
+        {
           "worksItemTitle": "Happy shop",
           "worksItemParagraph": "Happy shop is an online retail e-commerce to enhance customer experience and drive sales.",
           "toolsLeft": [

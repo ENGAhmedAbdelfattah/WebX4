@@ -1,12 +1,12 @@
 import HeaderSection from "@/components/UI/common/HeaderSection";
 import { lang } from "@/types/lang";
 import Device from "./units/Device";
-import { WorksSection } from "@/types/translations";
+import { WorksSection as TWorksSection } from "@/types/translations";
 import ToolItem from "./units/ToolItem";
 
 type props = {
   lang: lang;
-  t: WorksSection;
+  t: TWorksSection;
 };
 
 function WorksSection({ lang, t }: props) {
@@ -34,7 +34,7 @@ function WorksSection({ lang, t }: props) {
                   <div className="tools-right">
                     {t.toolsRight.map((nEl) => (
                       <a
-                      target="_black"
+                        target="_black"
                         key={nEl.id}
                         href={
                           nEl.name === "GitHub" ? el.githubSrc : el.websiteSrc

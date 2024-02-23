@@ -3,12 +3,13 @@
 @use "./../../../../../helpers/variable" as v;
 section.works-section {
   margin-top: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   div.container {
     overflow: hidden;
     div.works-items {
       margin-top: -20px;
       margin-bottom: 45px;
+      padding-bottom: 35px;
       display: flex;
       flex-direction: column;
       gap: 70px;
